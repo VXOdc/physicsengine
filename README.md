@@ -20,18 +20,7 @@ A real-time browser-based 2D physics sandbox built with React and the Canvas API
 - **Color Palettes** — Neon, Warm, Cool, and Monochrome themes
 - **FPS Counter + Body Count** — live performance stats in the HUD
 
----
 
-## 🚀 Quick Start
-
-```bash
-git clone https://github.com/yourusername/physics-sandbox.git
-cd physics-sandbox
-npm install
-npm run dev
-```
-
-Then open [http://localhost:5173](http://localhost:5173)
 
 ---
 
@@ -102,26 +91,3 @@ Where `e` is the coefficient of restitution. Positional correction is applied to
 
 ---
 
-## 🚢 Deployment (Vercel)
-
-```bash
-npm run build
-vercel --prod
-```
-
-Or connect your GitHub repo to [vercel.com](https://vercel.com) for automatic deploys on push.
-
----
-
-## 🛠️ Tech Stack
-
-- **React 18** + Hooks
-- **Canvas API** — custom renderer with radial gradients and glow
-- **Vite** — build tool
-- **Vercel** — hosting
-
----
-
-## 📄 License
-
-MIT — use it, fork it, build on it.

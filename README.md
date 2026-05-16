@@ -56,5 +56,5 @@ Physics programming demands balancing absolute mathematical accuracy, tight hard
 
 <br>
 
-## 🧠 Mathematical Foundation & Architecture
+##  Mathematical Foundation & Architecture
 The engine maps data flows across multiple local and global coordinate hierarchies. To guarantee predictability and eliminate structural drift, the system enforces a strict mathematical pipeline:

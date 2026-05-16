@@ -1,128 +1,60 @@
+<p align="center">
+  <img src="https://i.postimg.cc/TKfnzd1j/Gemini-Generated-Image-aocx43aocx43aocx-removebg-preview.png" height="300" width="auto" alt="PhysicsOne Engine Logo" />
+</p>
+
+# PhysicsOne
+
+<p align="center">
+  <b>A Deterministic, High-Performance Real-Time Physics Engine</b>
+</p>
 
 
+<div align="center">
 
+  <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Engine-Low--Level%20Architecture-blue?style=for-the-badge" alt="Architecture" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 
-Overview 
-PhysicsOne is a custom built real time physics engine project started on 5/15/26 
-Focused on the simulation of realistic and physical behaviors using advanced mathematical systems and a small level engien arcitecture 
+</div>
 
-This project ecplores the same core conecepts used in in game engines, robotics simulators, CAD software, and scientefic computational systems. instead of relying on a prebuilt physics middlewire physics one is designed around understanding and implemting the underlying mechanics directly. 
+<br>
 
-The engine combins computational physics SAT based collisons systems, vector mathematics rigid body dynamics and numercial simulation techniques into a unified framework built from the ground up. 
+##  Project Overview
+Started on May 15, 2026, **PhysicsOne** is a real-time computational physics framework engineered from the ground up. Rather than relying on a pre-built physics middleware, this engine directly addresses the fundamental mathematical and architectural challenges of physical simulation. 
 
-physics programming is one of the hardesst types of software engineering because it required balancing mathametical correctness perfomrance and simulation stability at the same time small mistakes can cuase objects to explode tunnel though other surfaces jitter with other objects uncontrollablly or destabilize an entire simulation. 
+The core system combines computational physics, Separating Axis Theorem (SAT) collision checking, vector mechanics, and numerical integration into a unified, deterministic framework. These principles form the bedrock of production game engines, industrial robotics simulators, CAD platforms, and aerospace engineering systems.
 
-PhysicsOne Was built specifically to conqour and tackle those challenges 
+### 📐 The Core Engineering Challenge
+Physics programming demands balancing absolute mathematical accuracy, tight hardware performance boundaries, and simulation stability simultaneously. Subtle micro-scale errors—such as floating-point drift or unmanaged contact forces—cause severe simulation artifacts: objects tunneling through boundaries, uncontrollable joint jitter, collision energy explosions, or complete state destabilization. PhysicsOne was architected to systematically prevent and resolve these exact failure states.
 
-__________________________________________________________________________________________
+<br>
 
-Advanced Systems 
+##  Advanced Engine Systems
 
-collison detection system 
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3> Geometric Collision Detection</h3>
+      <p>Calculates geometric intersections using strict mathematical testing rather than simplified, cheap bounding approximations:</p>
+      <ul>
+        <li><b>Separating Axis Theorem (SAT):</b> Robust convex hull intersection verification.</li>
+        <li><b>Manifold Generation:</b> Continuous evaluation of exact penetration depths and surface contact points.</li>
+        <li><b>Dynamic Normalization:</b> Real-time computation of precise collision normals.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3> Rigid Body Dynamics</h3>
+      <p>Simulates physical interactions via precise force-accumulation and impulse-resolution models:</p>
+      <ul>
+        <li><b>Velocity Integration:</b> Semi-implicit Euler methods to ensure stable positional updates across steps.</li>
+        <li><b>Rotational Mechanics:</b> Real-time distribution of mass matrices and angular inertia tensors.</li>
+        <li><b>Impulse Resolution:</b> Correct, momentum-preserving instantaneous velocity adjustments.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-PhysicsOne Implemtns collion detection system based on real geometric mathmatics rather than simplified approximations 
+<br>
 
-This includes 
-
-   Seperating axis theorm 
-   Collison normals 
-   Penetration depth calculations 
-   Convex shape intersection testing 
-   contact point generation 
-
-  SAT collision systems use alot and math and require alot of understanind 
-
-  Linear algebra 
-  Dot products 
-  Projection mathematics 
-  Coordinate transformations 
-  Vector normalizaiton 
-
-  These are the same categories of math used in advanced graphics engines and robotics software 
-
-  Rigid Body Physics 
-  The engine simulates rigid body interactions using forced base impluse based systems
-
-  the core concepts include 
-  velocity intergration 
-  Angular motion 
-  Mass Distribution 
-  Rotational intertia 
-  impluse resolution 
-
-  Numbercal Stability Engineering 
-
-  One of the hardest parts of physics programming is preventing instability 
-
-  PhysicsOne focuses on stable intergration methods 
-  Floating point error reduction 
-  Penetration correction 
-  Frame rate indepedent calculations 
-  COnstraint stabilization 
-
-  Coordinate Space Mathematics 
-  The engine operates across multiple coordinate sapces and transformations 
-
-  This includes 
-  Local space 
-  World Space 
-  Rotationmatrices 
-  Transform hierarchies 
-  Vector transformations 
-
-  Understanding coordinate systems is foundational to: 
-  Physics engiens 
-  3D grpahics robotics 
-  Aerospace simulations 
-  Computer vision systems 
-
-  Real Time simulation Architecture 
-
-  PhysicsOne is structed around real time update loops and deterministic simulation behavior 
-  This requires 
-  Effectinet frame execuation 
-  Time step Managment 
-  State synchronization 
-  Update odering 
-  Simulation consistecny 
-
-  These concepts overlap heavily wiht professional game engines and development real time simulation software 
-
-Highlights 
-  Built around advanced Matematical Physics 
-  Uses Separating Axis Theorem collision systems
-  Implements real-time rigid body simulation
-  Focuses on numerical stability and deterministic behavior
-  Explores low-level engine architecture
-  Integrates vector mathematics and coordinate transformations
-  Demonstrates understanding of computational physics principles
-  Combines mathematics, software engineering, and simulation design
-  Designed as a foundational engine project rather than a simple game prototype
-
-PhysicsOne --- Tech Specs 
-
-Core Technologies
-Real-time physics simulation
-SAT collision detection
-Vector-based mathematics
-Rigid body dynamics
-Impulse resolution systems
-Collision manifold generation
-Numerical integration
-Transform systems
-Mathematics Used
-Linear algebra
-Vector mathematics
-Geometry
-Trigonometry
-Projection mathematics
-Rotational mechanics
-Coordinate transformations
-Engineering Challenges
-Collision instability prevention
-Floating point precision management
-Stable contact resolution
-Real-time performance optimization
-Frame consistency
-Physics determinism
-
+## 🧠 Mathematical Foundation & Architecture
+The engine maps data flows across multiple local and global coordinate hierarchies. To guarantee predictability and eliminate structural drift, the system enforces a strict mathematical pipeline:

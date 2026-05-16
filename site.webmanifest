@@ -1,0 +1,14 @@
+{
+  "name": "PhysicsOne",
+  "short_name": "PhysicsOne",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#211c19",
+  "background_color": "#f4eee6",
+  "display": "standalone"
+}

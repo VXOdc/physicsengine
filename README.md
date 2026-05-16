@@ -24,7 +24,7 @@ Started on May 15, 2026, **PhysicsOne** is a real-time computational physics fra
 
 The core system combines computational physics, Separating Axis Theorem (SAT) collision checking, vector mechanics, and numerical integration into a unified, deterministic framework. These principles form the bedrock of production game engines, industrial robotics simulators, CAD platforms, and aerospace engineering systems.
 
-### 📐 The Core Engineering Challenge
+###  The Core Engineering Challenge
 Physics programming demands balancing absolute mathematical accuracy, tight hardware performance boundaries, and simulation stability simultaneously. Subtle micro-scale errors—such as floating-point drift or unmanaged contact forces—cause severe simulation artifacts: objects tunneling through boundaries, uncontrollable joint jitter, collision energy explosions, or complete state destabilization. PhysicsOne was architected to systematically prevent and resolve these exact failure states.
 
 <br>
@@ -37,7 +37,7 @@ Physics programming demands balancing absolute mathematical accuracy, tight hard
       <h3> Geometric Collision Detection</h3>
       <p>Calculates geometric intersections using strict mathematical testing rather than simplified, cheap bounding approximations:</p>
       <ul>
-        <li><b>Separating Axis Theorem (SAT):</b> Robust convex hull intersection verification.</li>
+        <li><b>Separating Axis Theorem:</b> Robust convex hull intersection verification.</li>
         <li><b>Manifold Generation:</b> Continuous evaluation of exact penetration depths and surface contact points.</li>
         <li><b>Dynamic Normalization:</b> Real-time computation of precise collision normals.</li>
       </ul>
